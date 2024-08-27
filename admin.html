@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-admin.css">
+    <link rel="icon" type="image/png" href="/assets/Favicon/favicon-32x32.png">
+</head>
+<body>
+    <div id="page" class="site admin">
+        <!-- header -->
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="logo"><a href="/"><span class="circle"></span>.Store</a></div>
+                            <div class="admin-title flexitem">
+                                <div class="thumbnail object-cover">
+                                    <img src="assets/admin/icoAdmin.png" alt="">
+                                </div>
+                                <p><strong>ample</strong>admin</p>
+                            </div>
+                        </div>
+                        <div class="right flexitem">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <input type="search" placeholder="Search...">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                </form>
+                            </div>
+                            
+                            <div class="avatar second-links"> 
+                                <ul class="flexitem">
+                                    <li>
+                                        <div class="thumbnail object-cover"><img src="assets/admin/avaterAdmin.png" alt=""></div>
+                                    </li>
+                                    <li class="has-child">                                  
+                                        <a href="#">
+                                            Hello Admin
+                                            <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
+                                        </a>  
+                                        <div class="notify">
+                                            <ul>
+                                                <li><a href="#"><div class="icon-small"><i class="ri-notification-2-line"></i></div>Notifications</a></li>
+                                                <li><a href="#"><div class="icon-small"><i class="ri-mail-unread-line"></i></div>Mails</a></li>
+                                                <li><a href="#"><div class="icon-small"><i class="ri-logout-box-line"></i></div>Sign out</a></li>
+                                            </ul> 
+                                        </div>                                
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="dasboard">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <h3>Dashboard</h3>
+                                    <a href="#0" class="dpt-trigger">
+                                        <i class="ri-dashboard-fill"></i>
+                                        <i class="ri-close-line"></i>
+                                    </a>
+                                </div>
+                                <div class="dpt-menu">
+                                    <ul class="second-links">
+                                        <li class="has-child sale">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-shopping-cart-2-line"></i></div>
+                                                Sales
+                                                <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Sales Invoice</a></li>
+                                                <li><a href="#">Client</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child import">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-store-2-line"></i></div>
+                                                Import goods
+                                                <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Import Invoice</a></li>
+                                                <li><a href="#">Supplier</a></li>
+                                                <li><a href="#">Brands</a></li>
+                                            </ul>
+                                        </li>
+    
+                                        <li class="has-child category">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-menu-line"></i></div>
+                                                Category
+                                                <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#0" class="manage-pro">Products Management</a></li>
+                                                <li><a href="#">Slide show</a></li>
+                                                <li><a href="#">User</a></li>
+                                                <li><a href="#">Account</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul class="flexitem second-links">
+                                <li><a href="/index.html">
+                                    <div class="icon-large"><i class="ri-global-line"></i></div>
+                                    Go to the website
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="icon-large"><i class="ri-contacts-line"></i></div>
+                                    Contact
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="icon-large"><i class="ri-contacts-book-3-line"></i></div>
+                                    Order
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="icon-large"><i class="ri-questionnaire-line"></i></div>
+                                    Help
+                                </a></li>
+                            </ul>
+                        </nav>
+                    </div>  
+                </div>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <div class="products-management">
+                <div class="container flexitem">
+                    <div class="wrapper">
+                        <div class="breadcrumb">
+                            <ul class="flexitem">
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">Category</a></li>
+                                <li>Products Management</li>
+                            </ul>
+                        </div>
+                        <div class="products one cart">
+                            <div class="actions">
+                                <button onclick="showModalProduct('')" class="primary-button">Add a new product</button>
+                            </div>
+                            <form class="form-manage">
+                                <div class="item">
+                                    <table id="pro-table">
+                                        <thead>
+                                            <th>No.</th>
+                                            <th>ID</th>
+                                            <th>Product</th>
+                                            <th>Brand</th>
+                                            <th>Price</th>
+                                            <th>Stock Qty</th>
+                                            <th>View</th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="modal-product" class="modal">
+            <form class="styled">
+                <p>
+                    <label for="ID">ID Item <span id="err-id" title="Invalid ID"></span></label>
+                    <input type="text" name="iditem" id="iditem" autocomplete="off" placeholder="Enter ID, Exp: SKU-452" onblur="CheckID()">
+                </p>
+                <p>
+                    <label for="name">Name <span id="err-name" title="Invalid Name"></span></label>
+                    <input type="text" name="name" id="name" autocomplete="off" placeholder="Enter item's name" onblur="CheckName()">
+                </p>
+                <p>
+                    <label for="brand">Brand <span id="err-brand" title="Invalid Brand"></span></label>
+                    <input type="text" name="brand" id="brand" autocomplete="off" placeholder="Enter item's brands" onblur="CheckBrand()">
+                </p>
+                <p>
+                    <label for="price">Price ($) <span id="err-price" title="Invalid Price"></span></label>
+                    <input type="text" name="price" id="price" autocomplete="off" placeholder="Enter item's price" onblur="CheckPrice()">
+                </p>
+                <p>
+                    <label for="stockqty">Stock Quantity <span id="err-stockqty"></span></label>
+                    <input type="number" name="stockqty" id="stockqty" min="0" autocomplete="off" placeholder="Enter item's stock quantity" onblur="CheckStockQty()">
+                </p>
+                <p>
+                    <button id="submit" class="primary-button" onclick="Submit()">Submit</button>
+                </p>
+            </form>
+            <a href="#" class="t-close modalclose flexcenter"><i class="ri-close-line"></i></a>
+        </div>
+
+        <!-- overlay -->
+        <div class="overlay"></div>
+    </div>
+
+    <script src="script-admin.js"></script>
+
+</body>
+</html>
